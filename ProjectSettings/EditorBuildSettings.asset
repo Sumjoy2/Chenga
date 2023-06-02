@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 103f3460455c91a46a5087587eaa1065
+  - enabled: 1
+    path: Assets/Scenes/InsiderChenga.unity
+    guid: dbe6938ef36827744b9baeb1338b55fb
+  - enabled: 1
+    path: Assets/Scenes/OutSiderChenga.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
