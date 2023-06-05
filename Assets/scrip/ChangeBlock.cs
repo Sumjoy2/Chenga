@@ -7,35 +7,40 @@ public class ChangeBlock : MonoBehaviour
 
     public List<GameObject> blocks;
     public List<Material> materials;
-    public Material selectedMaterial;
+    public GameObject paint;
+    public GameObject select;
+    private Material selectedMaterial;
+    private int selected = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (selectedMaterial == null)
+        if (PlayerPrefs.HasKey("Color"))
         {
-            selectedMaterial = materials[0];
+            selected = PlayerPrefs.GetInt("Color");
         }
+        selectedMaterial = materials[selected];
     }
 
     // Update is called once per frame
     void Update()
     {
+        selectedMaterial = materials[selected];
         foreach (GameObject block in blocks)
         {
             block.GetComponent<MeshRenderer>().material = selectedMaterial;
         }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            selectedMaterial = materials[1];
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            selectedMaterial = materials[2];
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            selectedMaterial = materials[0];
-        }
+    }
+
+    public void Select(int whichOne)
+    {
+        selected = whichOne;
+        PlayerPrefs.SetInt("Color", selected);
+        select.SetActive(false);
+    }
+
+    public void showPaint()
+    {
+        paint.SetActive(true);
     }
 }
