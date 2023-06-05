@@ -12,7 +12,7 @@ public class ChangeBlock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(selectedMaterial == null)
+        if (selectedMaterial == null)
         {
             selectedMaterial = materials[0];
         }
@@ -21,9 +21,21 @@ public class ChangeBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(GameObject block in blocks)
+        foreach (GameObject block in blocks)
         {
             block.GetComponent<MeshRenderer>().material = selectedMaterial;
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            selectedMaterial = materials[1];
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            selectedMaterial = materials[2];
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            selectedMaterial = materials[0];
         }
     }
 }
