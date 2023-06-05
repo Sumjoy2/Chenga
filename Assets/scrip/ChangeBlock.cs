@@ -15,10 +15,6 @@ public class ChangeBlock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("Color"))
-        {
-            selected = PlayerPrefs.GetInt("Color");
-        }
         selectedMaterial = materials[selected];
     }
 
@@ -35,7 +31,6 @@ public class ChangeBlock : MonoBehaviour
     public void Select(int whichOne)
     {
         selected = whichOne;
-        PlayerPrefs.SetInt("Color", selected);
         select.SetActive(false);
     }
 
