@@ -7,6 +7,7 @@ public class BlockInteraction : MonoBehaviour
     float horizontal;
     float vertical;
     public int speed = 5;
+    public GameObject selectedBlock;
 
     Rigidbody rb;
 
@@ -14,13 +15,23 @@ public class BlockInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = selectedBlock.GetComponent<Rigidbody>();
         Cursor.visible = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                selectedBlock = hit.transform.gameObject;
+                rb = selectedBlock.GetComponent<Rigidbody>();
+            }
+        }
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
