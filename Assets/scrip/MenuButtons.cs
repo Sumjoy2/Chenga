@@ -19,4 +19,9 @@ public class MenuButtons : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
