@@ -28,8 +28,11 @@ public class BlockInteraction : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                selectedBlock = hit.transform.gameObject;
-                rb = selectedBlock.GetComponent<Rigidbody>();
+                if(hit.transform.gameObject.tag == "Block")
+                {
+                    selectedBlock = hit.transform.gameObject;
+                    rb = selectedBlock.GetComponent<Rigidbody>();
+                }
             }
         }
         horizontal = Input.GetAxis("Horizontal");
