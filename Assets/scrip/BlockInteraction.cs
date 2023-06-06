@@ -8,7 +8,7 @@ public class BlockInteraction : MonoBehaviour
     float vertical;
     public int speed = 5;
     public GameObject selectedBlock;
-
+    public float jump = 5;
     Rigidbody rb;
 
     Vector3 CameraPos;
@@ -36,6 +36,10 @@ public class BlockInteraction : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
         CameraPos = Camera.main.transform.forward;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = new Vector3(0, jump, 0);
+        }
     }
 
     private void FixedUpdate()
