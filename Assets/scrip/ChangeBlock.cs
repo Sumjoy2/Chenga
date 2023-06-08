@@ -24,7 +24,9 @@ public class ChangeBlock : MonoBehaviour
         selectedMaterial = materials[selected];
         foreach (GameObject block in blocks)
         {
-            block.GetComponent<MeshRenderer>().material = selectedMaterial;
+            // Should check if selected block. ignore if selected block. if not selected block change color back to white
+            if (block.GetComponent<MeshRenderer>().material.color != Color.red)
+                block.GetComponent<MeshRenderer>().material = selectedMaterial;
         }
     }
 
