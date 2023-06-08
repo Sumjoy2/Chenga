@@ -17,7 +17,14 @@ public class HitGround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (this.gameObject == blocks.GetComponent<BlockInteraction>().selectedBlock)
+        { 
+            gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+        }
+        else
+        {
+            gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

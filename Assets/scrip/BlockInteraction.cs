@@ -19,12 +19,15 @@ public class BlockInteraction : MonoBehaviour
     public GameObject NoGameOvered;
     public float blockHitGround = 0;
 
+    public Material blahKolor;
+
     Vector3 CameraPos;
     // Start is called before the first frame update
     void Start()
     {
         gameover = false;
         rb = selectedBlock.GetComponent<Rigidbody>();
+        blahKolor = selectedBlock.GetComponent<Renderer>().material;
         Cursor.visible = true;
     }
 
@@ -91,6 +94,7 @@ public class BlockInteraction : MonoBehaviour
                 }
             }
         }
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
