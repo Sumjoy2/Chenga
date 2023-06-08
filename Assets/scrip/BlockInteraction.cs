@@ -106,7 +106,7 @@ public class BlockInteraction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            transform.Rotate(new Vector3(0, speed * 10, 0) * Time.deltaTime);
+            selectedBlock.transform.Rotate(new Vector3(0, speed * 250, 0) * Time.deltaTime);
         }
     }
 }
