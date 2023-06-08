@@ -39,3 +39,4 @@ public class ChangeBlock : MonoBehaviour
         paint.SetActive(true);
     }
 }
+
