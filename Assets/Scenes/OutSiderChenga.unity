@@ -2730,7 +2730,6 @@ MonoBehaviour:
   gameOvered: {fileID: 1147810999}
   NoGameOvered: {fileID: 1795075653}
   blockHitGround: 0
-  blahKolor: {fileID: 0}
 --- !u!1 &511259900
 GameObject:
   m_ObjectHideFlags: 0

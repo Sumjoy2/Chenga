@@ -19,7 +19,7 @@ public class BlockInteraction : MonoBehaviour
     public GameObject NoGameOvered;
     public float blockHitGround = 0;
 
-    public Material blahKolor;
+    Material blahKolor;
 
     Vector3 CameraPos;
     // Start is called before the first frame update
@@ -104,9 +104,13 @@ public class BlockInteraction : MonoBehaviour
             rb.velocity = new Vector3(0, jump, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q))
         {
-            selectedBlock.transform.Rotate(new Vector3(0, speed * 250, 0) * Time.deltaTime);
+            selectedBlock.transform.Rotate(new Vector3(0, speed * 25, 0) * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            Camera.main.transform.RotateAround(transform.position, Vector3.up, speed * 25 * Time.deltaTime);
         }
     }
 }
