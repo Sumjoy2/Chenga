@@ -103,5 +103,10 @@ public class BlockInteraction : MonoBehaviour
         {
             rb.velocity = new Vector3(0, jump, 0);
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            selectedBlock.transform.Rotate(new Vector3(0, speed * 250, 0) * Time.deltaTime);
+        }
     }
 }
