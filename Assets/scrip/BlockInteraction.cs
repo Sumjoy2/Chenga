@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BlockInteraction : MonoBehaviour
 {
@@ -42,6 +43,10 @@ public class BlockInteraction : MonoBehaviour
         {
             PlayerControl();
             playerTurn.text = "Player " + player + "'s Turn";
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene("rainbow");
         }
     }
 
