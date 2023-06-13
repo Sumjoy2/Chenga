@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class FunBloc : MonoBehaviour
 {
-    public GameObject[] AllBloks;
-    int randOutput;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

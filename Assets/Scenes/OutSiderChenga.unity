@@ -2743,61 +2743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffac8a2abbdcc45af4f31eaccb366f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllBloks:
-  - {fileID: 1678904681}
-  - {fileID: 815561189}
-  - {fileID: 731156187}
-  - {fileID: 2002318125}
-  - {fileID: 591569195}
-  - {fileID: 1568598516}
-  - {fileID: 283079774}
-  - {fileID: 1006191491}
-  - {fileID: 986253134}
-  - {fileID: 836841726}
-  - {fileID: 1527641942}
-  - {fileID: 2021575200}
-  - {fileID: 1525127055}
-  - {fileID: 1234028662}
-  - {fileID: 2044132525}
-  - {fileID: 1076926232}
-  - {fileID: 1280143257}
-  - {fileID: 791964657}
-  - {fileID: 644264451}
-  - {fileID: 1633710069}
-  - {fileID: 1165853109}
-  - {fileID: 1365006609}
-  - {fileID: 788920763}
-  - {fileID: 1240431090}
-  - {fileID: 1324359337}
-  - {fileID: 1985474843}
-  - {fileID: 229361629}
-  - {fileID: 491574032}
-  - {fileID: 1650010120}
-  - {fileID: 81241281}
-  - {fileID: 86491443}
-  - {fileID: 1849848831}
-  - {fileID: 401533904}
-  - {fileID: 1201820605}
-  - {fileID: 1127714123}
-  - {fileID: 1405348666}
-  - {fileID: 668687995}
-  - {fileID: 1061678312}
-  - {fileID: 1346815949}
-  - {fileID: 1812420795}
-  - {fileID: 2142701420}
-  - {fileID: 774160896}
-  - {fileID: 2103090226}
-  - {fileID: 1639148180}
-  - {fileID: 1884362138}
-  - {fileID: 1835892267}
-  - {fileID: 246050800}
-  - {fileID: 1137616789}
-  - {fileID: 1567516360}
-  - {fileID: 2066586778}
-  - {fileID: 2113980360}
-  - {fileID: 1220861084}
-  - {fileID: 1732875386}
-  - {fileID: 1300460002}
 --- !u!1 &511259900
 GameObject:
   m_ObjectHideFlags: 0
@@ -7515,6 +7460,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b4e8e292095b85049868b214eaad60d1, type: 2}
   paint: {fileID: 1971090963}
   select: {fileID: 1071837789}
+  randOutput: 0
 --- !u!4 &1244144822
 Transform:
   m_ObjectHideFlags: 0

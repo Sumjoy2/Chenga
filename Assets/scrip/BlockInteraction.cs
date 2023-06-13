@@ -46,7 +46,7 @@ public class BlockInteraction : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
-            SceneManager.LoadScene("rainbow");
+            SceneManager.LoadScene("rainbow"); 
         }
     }
 
@@ -96,6 +96,12 @@ public class BlockInteraction : MonoBehaviour
                 {
                     selectedBlock = hit.transform.gameObject;
                     rb = selectedBlock.GetComponent<Rigidbody>();
+                }
+                if (hit.transform.gameObject.tag == "Boom")
+                {
+                    selectedBlock = hit.transform.gameObject;
+                    rb = selectedBlock.GetComponent<Rigidbody>();
+                    rb.AddExplosionForce(20000, hit.transform.position, 50);
                 }
             }
         }

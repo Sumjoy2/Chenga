@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OutSiderChenga.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/rainbow.unity
+    guid: d61bfb3cb6feb8d44bb573f367f77cab
   m_configObjects: {}

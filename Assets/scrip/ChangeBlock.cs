@@ -11,11 +11,13 @@ public class ChangeBlock : MonoBehaviour
     public GameObject select;
     private Material selectedMaterial;
     private int selected = 0;
+    public int randOutput;
 
     // Start is called before the first frame update
     void Start()
     {
         selectedMaterial = materials[selected];
+        randOutput = Random.Range(0, 53);
     }
 
     // Update is called once per frame
@@ -26,8 +28,11 @@ public class ChangeBlock : MonoBehaviour
         {
             // Should check if selected block. ignore if selected block. if not selected block change color back to white
             if (block.GetComponent<MeshRenderer>().material.color != Color.red)
+            {
                 block.GetComponent<MeshRenderer>().material = selectedMaterial;
+            } 
         }
+        blocks[randOutput].tag = "Boom";
     }
 
 
