@@ -1572,24 +1572,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 15ba4fc0d8013c54db0e73cc9fdf3906, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d76e85923f9b96b469d5943ee9d279a6, type: 3}
---- !u!1 &201071565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 1360945448}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &201071567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201071565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1 &202887273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,24 +1720,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f16b29304c8a02d438afcb81820eee53, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c221b5f39f84a4193ed88c89eb6e1d, type: 3}
---- !u!1 &226044690 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 1752569477}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &226044692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226044690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1001 &240922201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2438,24 +2402,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -0.207, z: 0}
---- !u!1 &312654429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 866959052}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &312654431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312654429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1 &319704327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,6 +2693,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b4e8e292095b85049868b214eaad60d1, type: 2}
   paint: {fileID: 194247830}
   select: {fileID: 2005711348}
+  randOutput: 0
 --- !u!4 &432246611
 Transform:
   m_ObjectHideFlags: 0
@@ -7090,24 +7037,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933995816}
   m_CullTransparentMesh: 1
---- !u!1 &934677794 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 1801317854}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &934677796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934677794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1 &949525966
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,7 +8578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1082197194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9705,24 +9634,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d4a6180c9f04756478f63bb38395342a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c01f418c70ca944b80ee5b1652a969, type: 3}
---- !u!1 &1257478213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 916254999}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1257478215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257478213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1 &1271215095
 GameObject:
   m_ObjectHideFlags: 0
@@ -10535,24 +10446,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1390951615 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 776094918}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1390951617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390951615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1001 &1398043216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12829,24 +12722,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580119016}
   m_CullTransparentMesh: 1
---- !u!1 &1583452443 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 1710111496}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1583452445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583452443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1 &1588642505
 GameObject:
   m_ObjectHideFlags: 0
@@ -14406,24 +14281,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1800428837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 1471047126}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1800428839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800428837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1001 &1801317854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14758,24 +14615,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845496661}
   m_CullTransparentMesh: 1
---- !u!1 &1846009532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 2017319243}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1846009534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846009532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1 &1881011327
 GameObject:
   m_ObjectHideFlags: 0
@@ -15360,24 +15199,6 @@ Transform:
   m_Father: {fileID: 1082197197}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2015357048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3883114091612866453, guid: 4bb9d5a076e02164e884b1827be2afc3, type: 3}
-  m_PrefabInstance: {fileID: 1334259034}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2015357050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015357048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9524cf2c0f6a54d91522c357d99367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheTower: {fileID: 0}
 --- !u!1001 &2017319243
 PrefabInstance:
   m_ObjectHideFlags: 0
